@@ -1,0 +1,183 @@
+/* шрифт
+ font-family: "Raleway", sans-serif;
+font-family: "Roboto", sans-serif; */
+
+/* головний колір шрифту #2E2F42 */
+/* другий колір шрифту  #434455 */
+/* колір шрифту у футері #E7E9FC */
+/* колір шрифту основного заголовку #FFFFFF */
+/* колір шрифту лого #4D5AE5 та #2E2F42 */
+/* колір головного бекграунду #FFFFFF */
+/* колір другого бекграунду #2E2F42 */
+/* колір третього бекграунду #F4F4FD */
+/* Колір кнопок у портфоліо #F4F4FD */
+/* колір кнопки нажатої у портфоліо #404BBF */
+
+:root {
+  --primary-text-color: #2e2f42;
+  --second-text-color: #434455;
+  --footer-text-color: #e7e9fc;
+  --main-title-text-color: #ffffff;
+  --accent-text-color: #4d5ae5;
+  --bg-color-sectin: #f4f4fd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ----------------header --------------*/
+
+.logo {
+  color: var(--primary-text-color);
+  text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.logo .logo-color {
+  color: var(--accent-text-color);
+}
+
+.nav .link {
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.nav .link:focus,
+.nav .link:hover,
+.link.current {
+  color: var(--accent-text-color);
+}
+
+.addres .link {
+  color: inherit;
+
+  text-decoration: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.addres .link:hover,
+.addres .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* -------------------main---------------- */
+
+.main-section {
+  background-color: var(--primary-text-color);
+}
+
+.main-title {
+  color: var(--main-title-text-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.main-section .btn {
+  color: var(--main-title-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.title-section {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.team-section {
+  background-color: var(--bg-color-sectin);
+}
+
+.team {
+  background-color: var(--main-title-text-color);
+}
+
+/* -----------------footer------------------ */
+
+.footer {
+  background-color: var(--primary-text-color);
+}
+
+.logo-footer {
+  color: var(--bg-color-sectin);
+}
+
+.paragraph-color {
+  color: var(--footer-text-color);
+}
+
+/* ----------------Portfolio----------------- */
+
+.portfolio .btn {
+  font-family: inherit;
+  color: var(--accent-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  background-color: var(--footer-text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.portfolio .btn:hover,
+.portfolio .btn:focus {
+  color: var(--main-title-text-color);
+  background-color: var(--accent-text-color);
+}
